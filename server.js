@@ -8,7 +8,7 @@ const NewsRoute = require("./routes/newsRoute")
 const mongoose = require("mongoose")
 const app = express()
 app.use(cors({
-    origin : ["http://localhost:5173","http://localhost:5174", "https://uimea.vercel.app/"]
+    origin : ["http://localhost:5173","http://localhost:5174", "https://uimea.vercel.app"]
 }))
 app.use(express.json())
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
